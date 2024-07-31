@@ -15,15 +15,15 @@
     </style>
 </head>
 <body>
-    <h2>Send an Email</h2>
-    <p>Click the button below to open a pre-filled email:</p>
+    <h2>Questions about BIM?</h2>
+    <p>Email Loïc, the BIM lead for TMA:</p>
     <button onclick="sendEmail()">Email</button>
 
     <script>
         function sendEmail() {
             var recipient = 'loic.jourdan@tma-consultants.co.uk';
             var subject = 'TMA BIM Query';
-            var body = `Hi,%0D%0A%0D%0AThis%20question%20is%20related%20to%20the%20department:%20Landscape%20/%20Arb%20Risk%20/%20Arb%20Planning%20/%20Ecology%20/%20Technical%20/%20Other%20(Remove%20those%20not%20relevant)%0D%0AThis%20question%20is%20in%20relation%20to%20the%20project:%20XXXXXX%20(Please%20add%20the%20project%20number%20here%20if%20relevant)%0D%0A%0D%0AMy%20Query:%0D%0A%0D%0A%0D%0A%0D%0AKind%20Regards,%0D%0A%0D%0A(Make%20sure%20to%20add%20your%20name%20in%20here!)`;
+            var body = `Hi,%0D%0A%0D%0AThis question is related to the department: Landscape / Arb Risk / Arb Planning / Ecology / Technical / Other (Remove those not relevant)%0D%0AThis question is in relation to the project: XXXXXX (Please add the project number here if relevant)%0D%0A%0D%0AMy Query:%0D%0A%0D%0A%0D%0A%0D%0AKind Regards,%0D%0A%0D%0A(Make sure to add your name in here!)`;
             var mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`;
             window.location.href = mailtoLink;
         }
