@@ -7,6 +7,9 @@
             font-family: Arial, sans-serif;
             padding: 20px;
         }
+        .content {
+            margin-left: 20%; /* Adjust this value as needed */
+        }
         button {
             font-size: 16px;
             padding: 10px 20px;
@@ -15,9 +18,11 @@
     </style>
 </head>
 <body>
-    <h2>Questions about BIM?</h2>
-    <p>Email Loïc, the BIM lead for TMA:</p>
-    <button onclick="sendEmail()">Email</button>
+    <div class="content">
+        <h2>Questions about BIM?</h2>
+        <p>Email Loïc, the BIM lead for TMA:</p>
+        <button onclick="sendEmail()">Email</button>
+    </div>
 
     <script>
         function sendEmail() {
