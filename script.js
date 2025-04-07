@@ -1,6 +1,6 @@
 function sendEmail() {
     const recipient = 'loic.jourdan@tma-consultants.co.uk';
-    const subject = 'TMA BIM Query';
+    const subject = 'TMA IMP Query';
     
     const bodyText = `
 Hi,
